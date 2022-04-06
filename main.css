@@ -1,0 +1,463 @@
+*{
+    padding: auto;
+    box-sizing: border-box;
+    margin: 0;
+    list-style: none;
+}
+
+
+body{
+    background: rgb(15, 15, 15);
+    overflow-x: hidden;
+    
+}
+
+#header{
+    width: 100%;
+    height: 60px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: rgb(7, 7, 7);
+    font-family: system-ui;
+    z-index: 10;
+    overflow: hidden;
+}
+
+/*menu mobile*/
+.tab_menu{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 10px;
+    cursor: pointer;
+    color: var(--text--color--);
+    font-size: 200%;
+}
+
+
+.tab_header{
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+    margin: 5px;
+}
+
+.home img{
+    width: 80%;
+    height: 80%;
+}
+.tab_header ul{
+    display:flex;
+    position: absolute;
+}
+
+.sub_tab{
+    list-style: none;
+    display: flex;
+}
+
+.sub_tab a{
+    text-decoration: none;
+    text-underline: none ;
+    font-size: 100% ;
+    margin: 10px;
+    padding: 10px 10px;
+    border-bottom: 1px solid var(--text--color--);
+}
+
+.sub_tab:hover a{
+    background: rgb(90, 90, 90);
+    border-radius: 10px;
+    border-bottom: 2px solid var(--text--color--);
+}
+
+.moblie{
+    
+}
+/* div onechampion */
+#one_champion{
+    width: 100%;
+    
+}
+.main_onecham{
+    display: flex;
+    justify-content: center;
+}
+
+.one_champion-content{
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    width: 90%;
+}
+
+.one_champion-content-items{
+    overflow: hidden;
+    width: 30vw;
+    height: 50vh;
+    position: relative;
+    margin: 20px;
+    border: 2px solid var(--text--color--);
+}
+
+.one_champion-content-backgroud{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+}
+
+.one_champion-main {
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    transition: tranform 2s ease-in;
+    cursor: pointer;
+}
+
+.one_champion-name{
+    color: #937341;
+    font-weight: 600;
+    font-size: 1.7vw;
+    text-align: center;
+    margin: 0;
+}
+.explore{
+    color: #937341;
+    font-weight: 500;
+    font-size: 1.7vw;
+    text-align: center;
+    margin: 0;
+}
+
+.one_champion-content-detail{
+    position: absolute;
+    height: 36%;
+    bottom: -19%;
+    width: 100%;
+    transition: bottom 0.5s ease-in-out;
+}
+
+.one_champion-content-detail>b{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    border-bottom: solid 1px var(--text--color--);
+}
+
+.explore{
+    height: 60%;
+}
+
+.one_champion-content-detail a ion-icon{
+    padding-left: 30px;
+}
+
+.oc_lucian:hover .one_champion-content-detail,
+.oc_yone:hover .one_champion-content-detail,
+.oc_zed:hover .one_champion-content-detail{
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    border: solid 1px var(--text--color--);
+}
+/* 
+.oc_lucian:hover img,
+.oc_yone:hover img,
+.oc_zed:hover img{
+    flex: scaleX(1.3);
+} */
+
+
+/*Items in game */
+#items{
+    height: 50vw;
+    margin-bottom: 2vw;
+}
+
+.item_content{
+    height: 45vw;
+    width: 70vw;
+    position: absolute;
+    left: 15%;
+    overflow-x: hidden;
+    outline: solid var(--text--color--) 2px;
+    border-radius: 10px;
+}
+
+
+.items_ingame{
+    display: flex;
+    flex-wrap: wrap ;
+}
+
+.items{
+    margin: .5vw;
+}
+
+.items img{
+    outline: 2px solid var(--boder--items--);
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 3vw;
+}
+
+/* div spell */
+#spell{
+    width: 100%;
+    height: auto;
+    margin-bottom: 3vw;
+}
+
+/* .on{
+    display: block;
+} */
+
+.spell_content{
+    display: flex;
+    justify-content: center;
+    height: 39vw;
+}
+
+.spell_content-block{
+    display: flex;
+    justify-content: space-between;
+    width:82%;
+    outline: solid 2px var(--text--color--);
+    border-radius: 2vw;
+}
+
+.spell_content-blockmain{
+    width: 50%;
+}
+
+.spell_content-main{
+    width: 100%;
+}
+
+.spell_content-items{
+    margin: 1vw;
+    outline: solid 2px var(--text--color--);
+    border-radius: 1vw;
+    overflow: hidden;
+    cursor: pointer;
+    display: inline-block;
+    width: 6vw;
+}
+
+.spell-img{
+    display: inline;
+    outline: 2px solid var(--text--color--);
+}
+
+.spell-img img{
+    width: 6vw;
+}
+
+.spell-name{
+    font-size: calc(1vw + .01em);
+    color: #937341;
+    text-align: center;
+}
+
+/* spell deatial */
+.spell_content-detail{
+    width: 50%;
+    height: 45vh;
+}
+
+.detail_content{
+    position: relative;
+}
+
+
+.detail-of-spell{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.avatar_spell img{
+    border-radius: 10px;
+    width: 5vw;
+}
+
+.avatar_spell,
+.header_detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.header_detail{
+    border-bottom: solid 1px var(--boder--items--);
+}
+
+.in{
+    display: none;
+}
+
+
+/* div map */
+#map{
+    margin-bottom: 3vw;
+    width: 100vw
+}
+
+.map_content{
+    height: 100%;
+    width: 100vw;
+}
+
+.map_content-main{
+    height: 60vw;
+    background-position: center;
+    background-size: auto 120%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.monster{
+    position: absolute;
+    background-color: rgb(15, 15, 15);
+    border-radius:50%;
+    overflow: hidden;
+    height: 1vw;
+    width: 1vw;
+    transition: outline .7s ease-in-out;
+    transition: width .6s ease-in-out .1s, height .6s ease-in-out .1s;
+}
+
+
+.monster_header{
+    margin: 15px 10px 5px;
+    display: none;
+    align-items: center;
+    border-bottom: 1px solid var(--boder--items--);
+}
+
+.monster_content{display: none;}
+
+.monster:hover .monster_header{
+    display: flex;
+    justify-content: space-around;
+}
+.monster:hover .monster_content{
+    display: block;
+}
+
+.monster:hover{
+    height: 21.5vw;
+    width: 22vw;
+    outline: 4px solid var(--boder--items--);
+    border-radius:10px;
+    z-index: 10;
+}
+
+.Ancient_Krug-blue{
+    bottom: 18%;
+    left: 55%;
+}
+.Ancient_Krug-red{
+    top: 19%;
+    right: 54%;
+}
+
+.Blue_Sentinel-blue{
+    height: 2.5vw;
+    width: 2.5vw;
+    bottom: 52%;
+    left: 34%;
+}
+.Blue_Sentinel-red{
+    height: 2.5vw;
+    width: 2.5vw;
+    top: 53.5%;
+    right: 33.5%;
+}
+
+.Crimson_Raptor-blue{
+    bottom: 35.5%;
+    left: 47.5%;
+}
+.Crimson_Raptor-red{
+    top: 37%;
+    right: 47%;
+}
+
+.Greater_Murk_Wolf-red{
+    top: 44.5%;
+    right: 35.5%;
+}
+.Greater_Murk_Wolf-blue{
+    bottom: 43%;
+    left: 36%;
+}
+
+.Gromp-blue{
+    top: 45%;
+    left: 29%;
+}
+.Gromp-red{
+    bottom: 43.5%;
+    right: 28.5%;
+}
+
+.Red_Brambleback-blue{
+    height: 2.5vw;
+    width: 2.5vw;
+    bottom: 24.5%;
+    right: 47.5%;
+}
+.Red_Brambleback-red{
+    height: 2.5vw;
+    width: 2.5vw;
+    top: 26%;
+    left: 48%;
+}
+
+.Rift_Scuttler-blue{
+    bottom: 35%;
+    right: 35.5%;
+}
+.Rift_Scuttler-red{
+    top: 36.5%;
+    left: 36%;
+}
+
+.epic_monster{
+    outline: 4px solid purple;
+    height: 3vw;
+    width: 3vw;
+    top: 29.5%;
+    left: 38.3%;
+}
+.monster:hover.epic_monster{
+    height: 35vw;
+    width: 35vw;
+    outline: 4px solid var(--boder--items--);
+    border-radius:10px;
+    z-index: 10;
+}
+
+/* div all champions */
+#champions{
+
+}

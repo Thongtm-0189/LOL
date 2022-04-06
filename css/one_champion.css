@@ -1,0 +1,177 @@
+*{
+    padding: auto;
+    box-sizing: border-box;
+    margin: 0;
+    list-style: none;
+}
+
+
+body{
+    background: rgb(15, 15, 15);
+    overflow-x: hidden;
+    
+}
+
+#header{
+    width: 100%;
+    height: 60px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: rgb(7, 7, 7);
+    font-family: system-ui;
+    z-index: 10;
+    overflow: hidden;
+}
+
+/*menu mobile*/
+.tab_menu{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 10px;
+    cursor: pointer;
+    color: var(--text--color--);
+    font-size: 200%;
+}
+
+
+.tab_header{
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+    margin: 5px;
+}
+
+.home img{
+    width: 80%;
+    height: 80%;
+}
+.tab_header ul{
+    display:flex;
+    position: absolute;
+}
+
+.sub_tab{
+    list-style: none;
+    display: flex;
+}
+
+.sub_tab a{
+    text-decoration: none;
+    text-underline: none ;
+    font-size: 100% ;
+    margin: 10px;
+    padding: 10px 10px;
+    border-bottom: 1px solid var(--text--color--);
+}
+
+.sub_tab:hover a{
+    background: rgb(90, 90, 90);
+    border-radius: 10px;
+    border-bottom: 2px solid var(--text--color--);
+}
+
+.moblie{
+    
+}
+/* div onechampion */
+#one_champion{
+    width: 100%;
+    
+}
+.main_onecham{
+    display: flex;
+    justify-content: center;
+}
+
+.one_champion-content{
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    width: 90%;
+}
+
+.one_champion-content-items{
+    overflow: hidden;
+    width: 30vw;
+    height: 50vh;
+    position: relative;
+    margin: 20px;
+    border: 2px solid var(--text--color--);
+}
+
+.one_champion-content-backgroud{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+}
+
+.one_champion-main {
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    transition: tranform 2s ease-in;
+    cursor: pointer;
+}
+
+.one_champion-name{
+    color: #937341;
+    font-weight: 600;
+    font-size: 1.7vw;
+    text-align: center;
+    margin: 0;
+}
+.explore{
+    color: #937341;
+    font-weight: 500;
+    font-size: 1.7vw;
+    text-align: center;
+    margin: 0;
+}
+
+.one_champion-content-detail{
+    position: absolute;
+    height: 36%;
+    bottom: -19%;
+    width: 100%;
+    transition: bottom 0.5s ease-in-out;
+}
+
+.one_champion-content-detail>b{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    border-bottom: solid 1px var(--text--color--);
+}
+
+.explore{
+    height: 60%;
+}
+
+.one_champion-content-detail a ion-icon{
+    padding-left: 30px;
+}
+
+.oc_lucian:hover .one_champion-content-detail,
+.oc_yone:hover .one_champion-content-detail,
+.oc_zed:hover .one_champion-content-detail{
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    border: solid 1px var(--text--color--);
+}

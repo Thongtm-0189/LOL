@@ -1,0 +1,103 @@
+:root{
+    --text--color--: #937341;
+    --text--color--items--: #fff;
+    --boder--items--: #092949;
+    --text--larger--: var(--boder--items--);
+    --text--detail--main--: rgb(104, 104, 255);
+    --text--detail--theme--: rgb(255, 168, 53);
+    --background--:rgb(15, 15, 15);
+}
+
+::selection{
+    background: #937341;
+    color: #fff;
+}
+
+::-webkit-scrollbar{
+    width: thin;
+    background: rgb(15, 15, 15);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--text--color--);
+    border-radius: 10px;
+    border: var(--background--) solid 3px;
+}
+
+.text{
+    color: #937341;
+    font-weight: 500;
+    font-size: 2vw;
+    text-align: center;
+    margin: 0;
+}
+
+.title-div{
+    content: "";
+    height: 2px;
+    width: 100%;
+    text-align: center;
+}
+
+.border-title-div{
+    background: rgb(147,115,65);
+    background: radial-gradient(circle, rgba(147,115,65,1) 0%, var(--background--) 100%);
+}
+
+.title{
+    margin: 1.1vw 0;
+}
+
+.title-text-items{
+    font-weight: 600;
+    font-size: 2vw;
+    color: var(--text--color--);
+}
+
+.rows{
+    margin: 10px;
+}
+
+.title-name{
+    display: block;
+}
+.text_larger{
+    font-weight: 700;
+    font-size: 3vw;
+    color: var(--text--larger--);
+    font-family: system-ui;
+}
+
+.text_small{
+    font-size: calc(1vw + .2em);
+    color: #937341;
+    font-weight: 500;
+    text-align: center;
+}
+
+.text_color-main{
+    color: var(--text--detail--main--);
+    font-weight: 500;
+}
+.text_color-theme{
+    color: var(--text--detail--theme--);
+    font-weight: 500;
+}
+
+.red_team{
+    outline: .5vw solid red;
+}
+
+.blue_team{
+    outline: .5vw solid blue;
+}
+.boss{
+    outline: .5vw solid goldenrod;
+}
+.text_monster{
+    color: #937341;
+    font-weight: 500;
+    font-size: 1.1vw;
+    text-align: center;
+    margin: 0;
+}

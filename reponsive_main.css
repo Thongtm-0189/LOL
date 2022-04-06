@@ -1,0 +1,103 @@
+/* tablet */
+@media only screen and (max-width:770px){
+    
+    .tab_header{
+        display: flex;
+    }
+    /* one champion */
+    .name_onecham{
+        font-size: xx-large;
+    }
+
+    .one_champion-content{
+        display: grid;
+    }
+
+    .one_champion-content-items{
+        height: 20vw;
+        margin: 8px 0;
+        width: 60vw;
+        display: block;
+        justify-content: center;
+
+    }
+
+    .one_champion-content-backgroud{
+        width: 50%;
+        height: 100%;
+    }
+
+    .one_champion-content-detail{
+        height: 100%;
+        width: 50%;
+        right: 0;
+        bottom: 0;
+    }
+
+    .one_champion-content-detail a{
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        background: var(--background--);
+        border: 1px solid var(--text--color--);
+    }
+
+    .one_champion-content-detail{
+        display:block;
+    }
+    .one_champion-content-detail>b{
+        padding: 3vw;
+    }
+
+    /* spell */
+    .avatar_spell,
+    .header_detail{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/* mobile */
+@media only screen and (max-width:620px){
+
+    .home{
+        width: 100px;
+        height: 50px;
+    }
+    .tab_menu {
+        display: block;
+    }
+    .tab_header{
+        display: block;
+        position: absolute;
+        background: black;
+        width: 100%;
+    }
+
+    /* one champion */
+    
+    /* items */
+    
+
+
+    /* spell */
+    
+
+
+    /* map */
+    .monster_header img{
+        width: 10vw;
+    }
+
+    .text_monster{
+        font-size: 2vw;
+    }
+
+    .monster:hover .monster_content{
+        display: none;
+    }
+    .monster:hover.epic_monster{
+        height: 25vw;
+        width: 30vw;
+    }
+}
